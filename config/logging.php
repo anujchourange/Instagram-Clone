@@ -33,12 +33,16 @@ return [
     |                    "custom", "stack"
     |
     */
-
+    //changes made by me  'channels' => ['daily'],
     'channels' => [
-        'stack' => [
+        'vapor' => [
             'driver' => 'stack',
-            'channels' => ['daily'],
+            'channels' => ['daily', 'flare'],
             'ignore_exceptions' => false,
+        ],
+        //my changes 'flare' only
+        'flare' => [
+            'driver' => 'flare'
         ],
 
         'single' => [
