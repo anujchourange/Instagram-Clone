@@ -55,7 +55,7 @@ return [
     | You can enable the command registration below.
     |
     */
-    'register_commands' => env('REGISTER_IGNITION_COMMANDS', false),
+    'register_commands' => env('REGISTER_IGNITION_COMMANDS', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -109,7 +109,7 @@ return [
     */
 
     'remote_sites_path' => env('IGNITION_REMOTE_SITES_PATH', ''),
-    'local_sites_path' => env('IGNITION_LOCAL_SITES_PATH', ''),
+    'local_sites_path' => env('IGNITION_LOCAL_SITES_PATH', 'C:\Users\aarvee\freeCodeGram'),
 
     /*
     |--------------------------------------------------------------------------
