@@ -25,8 +25,11 @@ Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
 
 Route::get('/profile/{user}/edit', 'ProfilesController@edit')->name('profile.edit');
 
+<<<<<<< HEAD
 Route::patch('/profile/{user}', 'ProfilesController@update')->name('profile.update');
 
+=======
+>>>>>>> 4500bb69a3f7efac5016553e50cb4fe3c25b8397
 Route::get('/p/{post}', 'PostsController@show');
 Auth::routes();
 

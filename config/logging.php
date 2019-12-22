@@ -33,14 +33,23 @@ return [
     |                    "custom", "stack"
     |
     */
-
+    //changes made by me  'channels' => ['daily'],
     'channels' => [
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['daily'],
+            'channels' => ['daily', 'flare'],
             'ignore_exceptions' => false,
         ],
+        //my changes 'flare' only
+        'flare' => [
+            'driver' => 'flare',
+        ],
 
+    ],
+
+];
+
+/*
         'single' => [
             'driver' => 'single',
             'path' => storage_path('logs/laravel.log'),
@@ -95,6 +104,4 @@ return [
             'driver' => 'monolog',
             'handler' => NullHandler::class,
         ],
-    ],
-
-];
+        */
