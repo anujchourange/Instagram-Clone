@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class ModifyPostTable extends Migration
+class AddCaptionToPostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class ModifyPostTable extends Migration
      */
     public function up()
     {
-        //
-        Schema::table('posts',function(Blueprint $table){
-            $table->unsignedBigInteger('user_id')->nullable();
-            $table->index('user_id');
+        Schema::table('posts', function (Blueprint $table) {
+            //
+            $table->string('title')->nullable()->change();
         });
-    
     }
 
     /**
@@ -28,6 +26,8 @@ class ModifyPostTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('posts', function (Blueprint $table) {
+            //
+        });
     }
 }
