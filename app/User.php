@@ -5,7 +5,7 @@ namespace App;
 use App\Post;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Symfony\Component\HttpKernel\Profiler\Profile;
+//use Symfony\Component\HttpKernel\Profiler\Profile;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
