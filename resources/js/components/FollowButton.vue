@@ -30,7 +30,7 @@ export default {
                     console.log(response.data);
                 })
                 .catch(errors => {
-                    if (erros.response.status == 401) {
+                    if (errors.response.status == 401) {
                         window.location = "/login";
                     }
                 });

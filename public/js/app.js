@@ -1866,7 +1866,7 @@ __webpack_require__.r(__webpack_exports__);
         _this.status = !_this.status;
         console.log(response.data);
       })["catch"](function (errors) {
-        if (erros.response.status == 401) {
+        if (errors.response.status == 401) {
           window.location = "/login";
         }
       });
@@ -49512,7 +49512,7 @@ try {
 
 
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting
